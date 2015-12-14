@@ -1,0 +1,41 @@
+TEST CASES:
+
+VARIABLES: guess
+
+TEST CASE 1:
+INPUTS:
+  any suit that is wrong
+EXPECTED RESULT:
+  alertbox that displays "WRONG! THE CORRECT ANSWER WAS: " with the correct suit
+  image with a card that is within the correct suit
+  "You Scored 1000 Points!"
+ACTUAL RESULT:
+  "Wrong! The correct answer was: SPADES"
+  image of the 5 of spades
+  "You Scored 1000 Points!"
+  
+TEST CASE 2:
+INPUTS:
+  any suit that is right
+EXPECTED RESULT:
+  image with a corresponding card of my correct suit guesss
+  alert box that states "You are Correct! You gained a " + my randomly selected
+    multiplier + " bonus!"
+  prompt box "Guess That Suit!"
+ACTUAL RESULT:
+  "You are Correct! You gained a .25% bonus!"
+  the 5 of clubs image
+  prompt box "Guess That Suit!"
+
+TEST CASE 3:
+INPUTS:
+  anything that is not a suit
+EXPECTED RESULT:
+  alertbox that displays "Invalid Suit Entered!"
+  alertbox that displays "WRONG! THE CORRECT ANSWER WAS: " with the correct suit
+  image of a card that matches the correct suit
+ACTUAL RESULT:
+  "Invalid Suit Entered!"
+  "Wrong! The correct answer was: SPADES"
+  image of the 5 of spades
+  "You Scored 1000 Points!"

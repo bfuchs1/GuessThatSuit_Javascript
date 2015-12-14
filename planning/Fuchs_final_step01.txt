@@ -1,0 +1,26 @@
+Problem Statement
+  Design a program that will ask the user to enter a card suit. The program then randomly selects a card suit at random and diplays a card 
+  from that suit. If the user matched the suit, they gain 1273 score points and the program repeats. If they do not match, an alert message 
+  says game over. and their score is displayed. 
+
+Nouns: cardSuit, card, guess, score, message
+verbs, ask, select, match, alert, displayed
+
+Defining Diagram: 
+
+Inputs: 
+  guess
+
+Processes:
+ ask user for guess
+ draw suit
+  draw card based on suit
+ compare guess to drawnSuit
+ display drawnCard
+ if they match, increment score by 1273
+ if they don't match, alert the user that there was not a match and display
+  the score
+
+Outputs: 
+  Score 
+  cardDrawn

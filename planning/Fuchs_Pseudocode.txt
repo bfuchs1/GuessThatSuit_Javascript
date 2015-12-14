@@ -1,0 +1,67 @@
+CardGuess
+  prompt user for guess with "Guess that Suit!"
+  convert guess to upper case letters
+  return guess to Card Function
+END
+
+DrawSuit
+  declare drawnSuit as variable
+  declare suits array with values "CLUBS" "DIAMONDS" "HEARTS" "SPADES"
+  drawnSuit is equal to a randomly selected value from the suits array
+  return drawnSuit to Card function
+END
+
+DrawCard
+  take it the drawnSuit variable
+  declare drawnCard as a variable
+  Switch case with drawnSuit IF
+    case is "CLUBS"
+      drawnCard is equal to a randomly selected value from the clubs array
+      END Switch
+    case is "DIAMONDS"
+      drawnCard is equal to a randomly selected value from the diamonds array
+      END Switch
+    case is "HEARTS"
+      drawnCard is equal to a randomly selected value from the hearts array
+      END Switch
+    case is "SPADES"
+      drawnCard is equal to a randomly selected value from the spades array
+      END Switch
+  return drawnCard to the Card function
+END
+
+GuessCheck
+  take in drawnSuit, guess, and drawnCard variables
+  declare nextCard variable
+  set nextCard variable equal to img element
+  append nextCard to the body
+  WHILE guess === drawnSuit THEN
+    select multiplier randomly from scoreMultiplier array
+    set score equal to (score + 1379) + (score * multiplier)
+    round the score to nearest integer
+    alert the user that they are correct and display their multiplier
+    set guess equal to cardGuess function
+    Run valid suit function
+    set drawnSuit equal to the drawSuit function
+    set drawnCard equal to the drawCard function 
+    set nextCard variable equal to img element
+    append nextCard to the body
+  ENDWHILE
+  alert the user that they were wrong and display their score
+END
+
+ValidSuit
+  declare isValid variable
+  IF guess is equal to CLUBS THEN
+    isValid equals true
+  ELSE IF guess is equal to DIAMONDS THEN
+    isValid equals true
+  ELSE IF guess is equal to HEARTS THEN
+    isValid equals true
+  ELSE IF guess is equal to SPADES THEN
+    isValid equals true
+  ENDIF
+  IF isValid equals false
+    alert with "Invalid Suit Entered!"
+  ENDIF
+END

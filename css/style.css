@@ -1,0 +1,41 @@
+#wrapper{
+  background-color: rgba(0, 0, 0, .3);
+  color: #1A1A1A;
+  margin: 2% 3%;
+  text-align: center;
+}
+body{
+  background-image: url(../images/background2.jpg);
+  background-size: cover;
+  color: #1A1A1A;
+  text-align: center;
+}
+body img{
+  display: block;
+  margin: 3px auto;
+  width: 10%;
+}
+footer{
+  background-color: rgba(0, 0, 0, .3);
+  color: #EAEAEA;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 93%;
+}
+footer a:link{
+	color: #EAEAEA;
+}
+footer a:hover, footer a:focus{
+	color: #C70505;
+}
+h1, h4{
+  color: #EAEAEA;
+  text-align: center;
+}
+h2{
+  color: #EAEAEA;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 0% 38%;
+  text-decoration: underline;
+}
